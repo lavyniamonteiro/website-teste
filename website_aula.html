@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+    <!--JS-->   
+</head>
+<body> 
+
+<div class="container">
+<!--HEADER DO SITE-->
+<header id="topo">
+        <h1 class="esti_centro">HTML
+        <sup class="esti_centro"> Linguagem de Marcação de Hipertexto</sup>
+        </h1>
+        <h2 class="h2_topo">Tutoriais para Iniciantes</h2>
+        <nav class="menu">
+            <ul>
+                <li><a href="#topo">Topo do Site</a></li>
+                <li><a href="#html">Sobre HTML</a></li>
+                <li><a href="#tabela">Tabela e Lista</a></li>
+                <li><a href="#forms">Formulário de contato</a></li>
+             </ul>
+          </nav>
+</header>
+
+
+<!-- SECTION - SEÇÃO DO SITE --> 
+<main>
+<section class="estilo" id="html">
+        <img src="https://images.unsplash.com/vector-1739895567510-6301e962ba17?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+     <p>
+        <strong><ins>HTML</ins></strong>
+        <i> (Linguagem de Marcação de HiperTexto)</i>
+
+            é o bloco de construção mais básico da web.
+
+        <mark>Define o significado e a estrutura do conteúdo da web.</mark>
+             Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.
+        <br>
+        </p>
+    </section>
+
+<!--TABELA-->
+<div class="div-lista-tabela espaco" id="tab-lis">
+<section>
+   <table id="tabela"> 
+    <thead class="cor_tab">
+
+<tr>
+    <th>TAG</th>
+    <th>FUNÇÃO</th>
+    
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td class="tag">href</td>
+        <td class="explica">Cria um link clicável para outra página ou site.</td>
+    </tr>
+    <tr>
+        <td class="tag">img</td>
+        <td class="explica">Insere uma imagem na página.</td>
+    </tr>
+    <tr>
+        <td class="tag">br</td>
+        <td class="explica">Quebra a linha.</td>
+    </tr>
+    <tr>
+        <td class="tag">h1</td>
+    <td class="explica">Criam títulos, sendo "h1" o mais importante e "h6" o menos.</td>
+    </tr>
+    <tr>
+        <td class="tag">p</td>
+        <td class="explica">Cria um Paragráfo.</td>
+    </tr>
+    <tr>
+        <td class="tag">div</td>
+        <td class="explica">Agrupa outros elementos para organização e estilização.</td>
+    </tr>
+    <tr>
+            <td class="tag">b</td>
+            <td class="explica">Deixa o texto em negrito, mas sem indicar importância, 
+                só para dar destaque visual.</td>
+    </tr>
+    <tr>
+        <td class="tag">strong</td>
+        <td class="explica">Muda a aparência e indica que o conteúdo é importante</td>
+    </tr>
+</table>
+</section>
+<!--LISTA-->
+<section>
+<h2 class="h2_titu">Protocolos Web</h2>
+<ol>
+    <li><ins>HTTP (HyperText Transfer Protocol)</ins> - Permite a transmissão de páginas web entre o servidor e o navegador.</li>
+    <li><ins>FTP (File Transfer Protocol)</ins> - Serve para enviar e receber arquivos entre um computador e um servidor.</li>
+    <li><ins>DNS (Domain Name System)</ins> - Converte nomes de sites em endereços IP.</li>
+    <li><ins>TCP/IP (Transmission Control Protocol / Internet Protocol)</ins> - Conjunto de protocolos que garantem o envio correto e o roteamento dos dados.</li>
+    <li><ins>IMAP (Internet Message Access Protocol)</ins> - Acessa e-mails diretamente no servidor, sem apagá-los.</li>
+</ol>
+<br>
+</section>
+</div>
+<!--FORMS-->
+
+<section id="forms" class="espaco">
+<form method="post" action="obrigado.html">
+    <label>Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome" required>
+    <br>
+    <label for="idade">Idade: <span id="valorIdade">25</span> anos</label>
+    <input type="range" id="idade" name="idade" min="13" max="50" value="25">
+    <br>
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Digite seu email">
+    <br>
+    <label>Assunto:</label>
+     <select name="select">
+       <option value="valor1">Dúvidas</option>
+       <option value="valor2">Elogios</option>
+       <option value="valor3">Reclamações</option>
+     </select>
+    <br>
+    <label>Mensagem:</label>
+    <textarea name="mensagem"placeholder="Escreva seu contéudo" ></textarea>
+    <br>
+    <label>
+    <input type="checkbox" name="termo" value="aceito" required>
+    Aceito os termos do site para envio dos dados.
+    </label>
+    <br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Apagar</button>
+    
+<script>
+    const slider = document.getElementById('idade');
+    const output = document.getElementById('valorIdade');
+  
+    // Mostrar valor inicial
+    output.textContent = slider.value;
+  
+    // Atualizar o valor enquanto desliza
+    slider.addEventListener('input', function () {
+      output.textContent = this.value;
+    });
+  </script>
+</form>
+
+</section>
+</main>
+
+<!--RODAPÉ-->
+<footer>
+    <div class="color-div">
+    Meu Site &copy; Direitos Reservados
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="#topo">Topo do Site</a></li>
+            <li><a href="#html">Sobre HTML</a></li>
+            <li><a href="#tabela">Tabela e Lista</a></li>
+            <li><a href="#forms">Formulário de contato</a></li>
+         </ul>
+      </nav>
+</footer>
+
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+.container{
+  display: grid;
+  grid-template-areas: 
+    "topo"
+    "prin"
+    "pe";
+  gap: 30px;
+}
+header {
+  grid-area: topo;
+}
+main {
+  grid-area: prin;
+}
+footer {
+  grid-area: pe;
+}
+
+
+#topo{
+    border-width: 5px; 
+    border-style: groove;
+    border-color: yellow; 
+    padding: 60px; 
+    margin-top: 1px;
+    margin-bottom:1px;
+    height: auto; 
+    font-size: 120%; 
+    background-color: rgb(231, 142, 27);
+    color: white;
+   } 
+.esti_centro{
+    text-align: center;
+}
+.h2_topo{
+font-size: 25px; 
+text-align: center;
+}
+.estilo{
+    height: 20%;
+}
+img{
+   float: left;
+   margin-right: 10px;
+   width: 60px;
+   height: 60px;
+}
+      
+#tabela{
+    border:1px;
+}
+.cor_tab{
+    background-color:rgb(231, 149, 20);
+}
+th{
+    color: white;
+}
+.tag{
+    background-color: rgb(231, 142, 48);
+}
+.explica{
+    background-color: rgb(181, 129, 37);
+  }
+.h2_titu{
+    background-color: rgb(231, 142, 48);
+    text-align: center;
+    color: white;
+}
+label{
+    color:#fb8111;
+}
+.obg{
+    text-align: center;
+    color:white;
+    background-color:#fb8111;
+}
+a{
+    color:#fb8111;
+}
+body{
+    margin: 0;
+  }
+  
+  .text{
+    font-size: 15px;
+  }
+  section{
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .div-lista-tabela{
+    display: flex;
+    flex-direction: row;
+  }
+  @media (max-width:800px){
+    .div-lista-tabela{
+      display: flex;
+      flex-direction: column
+    }
+    }
+  .espaco{
+    margin-bottom:20px;
+  }
+ 
+footer{
+  display: grid;
+  background-color: orange;
+  grid-template-rows: auto;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+.color-div{
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+nav a{
+  color: white;}
+  
+nav a:hover{
+    color: red;}
+
+.menu ul{
+  list-style: none;   
+  display: flex;
+  justify-content: center;
+  margin-left:10px;
+  gap: 15px;
+  flex-wrap: wrap; 
+ }
+
+/*APENAS PARA NAVEGAÇÃO DE MENU*/ 
+#html{}
+#tab-lis{}
+
+/*FORMS*/
+#forms {
+  padding: 20px;
+  height: auto; 
+  margin-left:10px;
+}
+button {
+  width: 60px;
+  margin: 5px;
+}
+@media (max-width:800px){
+  button{
+      width: 25%;
+      margin: 5px;
+  }
+}
+.obg-volte{
+  margin-left: 10px;
+}
